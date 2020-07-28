@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="36dp"
+    android:paddingBottom="48dp"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".ui.home.ProfileDialog">
+
+    <TextView
+        android:id="@+id/txtName"
+        style="?attr/textAppearanceHeadline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@tools:sample/full_names" />
+
+    <TextView
+        android:id="@+id/txtEmail"
+        style="?attr/textAppearanceBody1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        tools:text="@tools:sample/first_names" />
+
+    <TextView
+        android:id="@+id/txtMobile"
+        style="?attr/textAppearanceBody2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        tools:text="@tools:sample/us_phones" />
+
+    <TextView
+        android:id="@+id/txtCountry"
+        style="?attr/textAppearanceBody2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        tools:text="@tools:sample/cities" />
+
+    <TextView
+        android:id="@+id/txtGender"
+        style="?attr/textAppearanceBody2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        tools:text="@tools:sample/first_names" />
+
+    <TextView
+        android:id="@+id/txtDateOfBirth"
+        style="?attr/textAppearanceBody1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        tools:text="@tools:sample/date/mmddyy" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">RetrofitRoomSample</string>
+    <string name="hint_email_address">Email Address</string>
+    <string name="hint_password">Password</string>
+    <string name="btn_login">Login</string>
+    <string name="btn_register">Register</string>
+    <string name="hint_full_name">Full Name</string>
+    <string name="hint_confirm_password">Confirm Password</string>
+    <string name="hint_mobile_number">Mobile Number</string>
+    <string name="hint_country">Country</string>
+    <string name="hint_gender">Gender</string>
+    <string name="hint_date_of_birth">Date of Birth</string>
+
+    <string name="txt_enter_email">Enter email address!</string>
+    <string name="txt_enter_valid_email">Enter valid email address!</string>
+    <string name="txt_enter_password">Enter password!</string>
+    <string name="txt_enter_full_name">Enter full name!</string>
+    <string name="txt_enter_mobile">Enter valid mobile number!</string>
+    <string name="txt_enter_country">Enter country!</string>
+    <string name="txt_enter_gender">Select gender!</string>
+    <string name="txt_enter_date_of_birth">Enter date of birth!</string>
+    <string name="txt_confirm_password">Confirm your password!</string>
+    <string name="txt_invalid_password">Password contains invalid characters!</string>
+    <string name="txt_passwords_not_match">Passwords do not match!</string>
+    <string name="txt_password_short">Password is too short!</string>
+    <string name="txt_username_exists">Username already exists!</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_log_out">Log Out</string>
+</resources>

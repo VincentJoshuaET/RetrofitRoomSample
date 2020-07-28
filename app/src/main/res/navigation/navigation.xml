@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/navigation_splash">
+
+    <navigation
+        android:id="@+id/navigation_splash"
+        app:startDestination="@id/fragment_splash">
+
+        <fragment
+            android:id="@+id/fragment_splash"
+            android:name="com.example.retrofitroomsample.ui.SplashFragment" />
+
+        <action
+            android:id="@+id/action_splash_to_auth"
+            app:destination="@id/navigation_auth"
+            app:popUpTo="@id/navigation_splash"
+            app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/action_splash_to_home"
+            app:destination="@id/navigation_home"
+            app:popUpTo="@id/navigation_splash"
+            app:popUpToInclusive="true" />
+
+    </navigation>
+
+    <navigation
+        android:id="@+id/navigation_auth"
+        app:startDestination="@id/fragment_login">
+
+        <fragment
+            android:id="@+id/fragment_login"
+            android:name="com.example.retrofitroomsample.ui.auth.LoginFragment"
+            android:label="Login"
+            tools:layout="@layout/fragment_login">
+            <action
+                android:id="@+id/action_login_to_register"
+                app:destination="@id/fragment_register" />
+        </fragment>
+
+        <fragment
+            android:id="@+id/fragment_register"
+            android:name="com.example.retrofitroomsample.ui.auth.RegisterFragment"
+            android:label="Register"
+            tools:layout="@layout/fragment_register" />
+
+        <action
+            android:id="@+id/action_auth_to_home"
+            app:destination="@id/navigation_home"
+            app:popUpTo="@id/navigation_auth"
+            app:popUpToInclusive="true" />
+
+    </navigation>
+
+    <navigation
+        android:id="@+id/navigation_home"
+        app:startDestination="@id/fragment_home">
+
+        <fragment
+            android:id="@+id/fragment_home"
+            android:name="com.example.retrofitroomsample.ui.home.HomeFragment"
+            android:label="Home"
+            tools:layout="@layout/fragment_home">
+            <action
+                android:id="@+id/action_home_to_details"
+                app:destination="@id/fragment_details" />
+        </fragment>
+
+        <fragment
+            android:id="@+id/fragment_details"
+            android:name="com.example.retrofitroomsample.ui.home.DetailsFragment"
+            android:label="Details"
+            tools:layout="@layout/fragment_details" />
+
+        <dialog
+            android:id="@+id/dialog_profile"
+            android:name="com.example.retrofitroomsample.ui.home.ProfileDialog"
+            android:label="Profile"
+            tools:layout="@layout/dialog_profile" />
+
+        <action
+            android:id="@+id/action_home_to_auth"
+            app:destination="@id/navigation_auth"
+            app:popUpTo="@id/navigation_home"
+            app:popUpToInclusive="true" />
+
+    </navigation>
+
+</navigation>
